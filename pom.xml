@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- spring-boot 父工程 -->
+	<parent>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<version>1.5.4.RELEASE</version>
+	</parent>
+
+
+	<groupId> cn.dapotian</groupId>
+	<artifactId>springboot-shiro</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<!-- 依赖导入 -->
+	<dependencies>
+
+
+		<dependency>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.boot</groupId>
+		</dependency>
+
+		<!-- thymeleaf -->
+		<dependency>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<groupId>org.springframework.boot</groupId>
+		</dependency>
+
+		<!-- shiro与Springboot整合 -->
+		<dependency>
+			<artifactId>shiro-spring</artifactId>
+			<groupId>org.apache.shiro</groupId>
+			<version>1.4.0</version>
+		</dependency>
+	</dependencies>
+
+
+	<!-- 修改项目配置 -->
+	<properties>
+		<!-- 修改项目的JDK编译版本 -->
+		<java.version>1.8</java.version>
+		<thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
+		<thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
+	</properties>
+</project>
